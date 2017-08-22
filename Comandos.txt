@@ -1,0 +1,18 @@
+git int  // crea directorio
+git status //comprueba el status de el git
+git add algo.txt // añade un archivo al master (?)
+git add '*.txt' // añáde todos los terminados en txt
+git commit -m "nombre"// añade a lo hecho, con un comentario
+git log // ve todos los cambios hechos
+git remote add <nombre> <pagina>//  enlazar con una nube
+git push -u origin master // añade todos los comit al server
+git pull origin master // toma todos los archivos de la nube al master o local
+git diff HEAD //  te dice las diferencias cuando sacas los archivos
+git diff --staged // te dice las diferencias de un add con el commit anterior
+git reset <nombre> // pasa un archivo de aded a uninsigned
+git checkout -- <nombre archivo> // lleva un archivo a su version anterior que estaba guardada en un commit aka UNDO
+git branch <NOMBRE del branch>// crea una rama
+git checkout <nombre de la rama> // cambia de una rama a otra
+git rm '*.txt' // remueve todos los archivos txt del disco
+git branch -d <nombre del branch> // elimina una branch
+git push // sube todo a la nube
