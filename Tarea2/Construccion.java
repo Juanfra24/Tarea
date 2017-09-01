@@ -1,18 +1,19 @@
 class Construccion {
-    private int bloques;
-    protected Construccion(int bloques){
-        this.bloques = bloques;
+    private int cantidad;
+    protected  Construccion(int cantidad){
+        this.cantidad=cantidad;
     }
-
-    protected void Espacio(int fase) {
-        for (int i = 0; i <bloques-1-fase ; i++) {
-            System.out.printf(" ");
-        }
+    protected int cantidad(){
+        return cantidad;
     }
-    protected void Ladrillos(int fase){
-        for (int i = 0; i<fase+1 ; i++) {
-            System.out.printf("#");
-        }
+    protected char material(){
+        return 'o';
+    }
+    protected int espacios(int fase){
+        return cantidad-fase;
+    }
+    protected int ladrillo(int fase){
+        return fase+1;
     }
     protected void SaltoDeLinea(){
         System.out.printf("\n");

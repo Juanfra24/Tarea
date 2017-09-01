@@ -2,12 +2,17 @@ class Main {
 
     public static void main(String[] args) {
         System.out.println("Hola Mundo!");
-        int bloques = java.util.concurrent.ThreadLocalRandom.current().nextInt(1, 21);;
-        Construccion e = new Construccion(bloques);
-        for (int i = 0; i < bloques ; i++) {
-            e.Espacio(i);
-            e.Ladrillos(i);
+        Construccion e = new Construccion(java.util.concurrent.ThreadLocalRandom.current().nextInt(1, 21));
+        for (int i = 0; i < e.cantidad(); i++) {
+
+            for(int j=0; j <e.espacios(i); j++) {
+                System.out.printf(" ");
+            }
+            for(int j=0; j<e.ladrillo(i);j++) {
+                System.out.printf("" + e.material());
+            }
             e.SaltoDeLinea();
+
         }
 
     }
